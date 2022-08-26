@@ -1,0 +1,124 @@
+body
+   font-family: 'Inter'
+   background: #171717
+   font-weight: 400
+   font-size: 16px
+   line-height: 130%
+   color: #FFFFFF
+a
+   text-decoration: none
+   box-sizing: border-box
+   color: #fff
+   &:hover 
+      color: $yellow
+.container
+   max-width: 1920px
+   margin: 0 auto
+   padding: 0 80px
+   @media ( max-width: 1199px )
+      max-width: 960px
+   @media (max-width: 991px)
+      max-width: 720px
+   @media (max-width: 767px)
+      max-width: 540px
+.btn
+   font-family: 'Neue Machina'
+   display: flex
+   align-items: center
+   justify-content: center
+   transition: background 0.5s, color 0.5s
+   width: 200px
+   height: 50px
+   font-weight: 900
+   font-size: 16px
+   text-transform: uppercase
+   color: #FFFFFF
+.btn1 
+   background: #755DAF
+   &:hover 
+      background: #4E3589
+      color: #FFFFFF 
+.btn2
+   background: #949597
+   &:hover 
+      background: #4F4F4F
+      color: #FFFFFF 
+.btn3
+   background: transparent
+   border: 2px solid #FFFFFF
+   &:hover 
+      background: #FFFFFF
+      color: #171717
+.d-flex
+   display: flex
+.body-wrap
+   overflow: hidden
+   position: relative
+   display: flex
+   flex-direction: column
+   min-height: 100vh
+footer
+   margin-top: auto
+h1
+   font-weight: 900
+   font-size: 96px
+   line-height: 93px
+   font-family: 'Neue Machina'
+   margin: 0
+h2 
+   font-family: 'Neue Machina'
+   font-weight: 900
+   font-size: 64px
+   line-height: 130%
+   text-transform: uppercase
+   color: #FFFFFF
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+   margin: 0
+.title-yel
+   color: #FFD67A
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+.title-span 
+    font-family: 'Neue Machina'
+    font-weight: 300
+ul 
+   margin: 0
+   padding: 0
+   list-style-type: none
+p
+   margin: 0
+.svg 
+   transition: fill 0.5s
+a
+   transition: color 0.5s
+   box-sizing: border-box
+li
+   a
+      transition: color 0.5s
+button
+   cursor: pointer
+   box-sizing: border-box
+textarea
+   transition: border 0.5s
+   box-sizing: border-box
+   &:focus
+      transition: 0.5s
+      outline: none
+      border: 1px solid $yellow !important
+input
+   transition: 0.5s
+   box-sizing: border-box
+   border: 1px solid #fff
+   &:disabled
+      pointer-events: none
+      opacity: 0.5
+   &:focus 
+      border: 1px solid $yellow !important
+      transition: 0.5s
+   &:focus-visible
+      outline: initial
+path
+   transition: fill 0.5s
+div, q 
+   box-sizing: border-box
+.icon 
+   transition: fill 0.5s

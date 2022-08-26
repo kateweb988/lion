@@ -1,0 +1,645 @@
+.burger, .menu 
+   display: none
+.nav 
+   padding: 24px 0
+   &__btn 
+      width: 160px
+      height: 50px
+   &__box 
+      align-items: center
+      justify-content: space-between
+   &__list 
+      display: flex
+      flex-wrap: wrap 
+      max-width: 850px
+      width: 100%
+      position: relative 
+      top: -8px
+      justify-content: flex-start
+   &__item 
+      margin-right: 60px
+      margin-top: 10px
+      &:last-child
+         margin-right: 0
+   &__link 
+      font-family: 'VG5000'
+      font-weight: 400
+      font-size: 16px
+      line-height: 19px
+      text-transform: uppercase
+      sup 
+         left: 2px
+         font-size: 14px
+         line-height: 17px
+         text-transform: uppercase
+         top: -19px
+.header 
+   padding-bottom: 200px
+   &__img 
+      width: 712px
+      object-fit: contain
+   &__round 
+      position: absolute
+      left: 43%
+      top: 0
+      -webkit-animation-name: spin
+      -webkit-animation-duration: 10000ms
+      -webkit-animation-iteration-count: infinite
+      -webkit-animation-timing-function: linear
+      -moz-animation-name: spin
+      -moz-animation-duration: 10000ms
+      -moz-animation-iteration-count: infinite
+      -moz-animation-timing-function: linear
+      -ms-animation-name: spin
+      -ms-animation-duration: 10000ms
+      -ms-animation-iteration-count: infinite
+      -ms-animation-timing-function: linear
+      animation-name: spin
+      animation-duration: 10000ms
+      animation-iteration-count: infinite
+      animation-timing-function: linear
+   &__box 
+      padding-left: 125px
+      align-items: center
+      justify-content: space-between
+      position: relative
+      margin-top: 147px
+   &__content 
+      width: 100%
+      max-width: 787px
+      flex: 1 0 auto
+      margin-right: 129px
+   &__wrap 
+      display: flex
+      position: relative
+      width: 100%
+      margin-left: auto
+      flex-direction: column
+      align-items: flex-end
+      top: -57px
+   &__img2 
+      position: absolute
+      left: -212px
+      bottom: -128px
+      width: 363px
+      object-fit: contain
+   &__info 
+      font-weight: 800
+      font-size: 20px
+      line-height: 130%
+      margin-top: 67px
+   &__text 
+      font-family: 'Inter Extra Light BETA'
+      max-width: 630px
+      font-weight: 200
+      font-size: 20px
+      line-height: 130%
+      margin-top: 44px
+   &__links 
+      margin-top: 90px
+      flex-wrap: wrap
+      a 
+         margin-right: 15px
+         margin-top: 15px
+         &:last-child
+            margin-right: 0
+   &__el 
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100px
+      height: 100px
+      border: 2px solid #FFFFFF
+      margin: 120px 0 0 auto
+      transition: border 0.5s
+      &:hover 
+         border: 2px solid $yellow
+         .icon 
+            fill: $yellow
+   &__icon 
+      fill: white
+      width: 48px
+      height: 100%
+   &__block 
+      width: 100%
+      max-width: 630px
+@-ms-keyframes spin 
+   from
+      -ms-transform: rotate(0deg)
+   to 
+      -ms-transform: rotate(360deg)
+@-moz-keyframes spin 
+   from 
+      -moz-transform: rotate(0deg)
+   to 
+      -moz-transform: rotate(360deg)
+@-webkit-keyframes spin 
+   from 
+      -webkit-transform: rotate(0deg)
+   to
+      -webkit-transform: rotate(360deg)
+@keyframes spin 
+   from 
+      transform: rotate(0deg)
+   to 
+      transform: rotate(360deg)
+.smart 
+   padding: 225px 0 250px
+   h2 
+      max-width: 1032px
+   &__add 
+      font-family: 'Neue Machina'
+      width: 840px
+      height: 50px
+      background: $vio
+      align-items: center
+      justify-content: center
+      font-weight: 900
+      font-size: 20px
+      line-height: 110%
+      text-align: center
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      color: #FFFFFF
+      display: flex
+      margin-top: 40px
+   &__icon 
+      width: 45px
+      height: 40px
+      display: flex
+      fill: $yellow
+   &__socials 
+      align-items: center
+      margin-top: 58px
+   &__link 
+      margin-right: 27px
+      &:nth-child(2)
+         position: relative
+         top: 5px
+      &:hover 
+         .icon 
+            fill: $vio
+   &__bg 
+      font-family: "Neue Machina"
+      font-weight: 900
+      font-size: 260px
+      line-height: 251px
+      position: absolute
+      right: inherit
+      top: -83px
+      left: 574px
+      color: transparent
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1)
+      z-index: -1
+   &__box 
+      position: relative
+      padding-left: 123px
+.apy 
+   padding: 238px 0 
+   &__box 
+      align-items: center
+      justify-content: space-between
+      padding-left: 49px
+   &__wrap 
+      max-width: 840px
+      width: 100%
+      flex: 1 0 auto
+   &__img 
+      position: relative 
+      left: 0
+   &__el 
+      width: 100%
+      height: auto
+      background: $vio
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 26px 60px
+      position: relative
+      top: -5px
+      &:before 
+         content: ""
+         display: block
+         position: absolute
+         left: 28px
+         top: -25px
+         background: url(img/bef.svg) no-repeat 
+         width: 64px
+         height: 64px
+      &:after
+         content: ""
+         display: block
+         position: absolute
+         right: 0
+         bottom: -34px
+         background: url(img/after.svg) no-repeat 
+         width: 64px
+         height: 64px
+   &__text 
+      font-family: "Neue Machina"
+      font-weight: 700
+      font-size: 20px
+      line-height: 110%
+      text-align: center
+      letter-spacing: 0.05em
+      text-transform: uppercase
+      max-width: 713px
+      margin: 0 auto
+   &__name 
+      font-family: "Neue Machina"
+      color: transparent
+      -webkit-text-stroke: 1px #FFFFFF
+      font-weight: 900
+      font-size: 128px
+      line-height: 104%
+      text-transform: uppercase
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+   &__info 
+      font-weight: 400
+      font-size: 20px
+      line-height: 130%
+      margin-top: 44px
+   &__content 
+      max-width: 906px
+      width: 100%
+      flex: 1 0 auto
+      position: relative
+      left: -148px
+      top: -105px
+   &__block 
+      margin-top: 50px
+      text-align: center
+   &__fix 
+      font-family: "Neue Machina"
+      font-weight: 900
+      font-size: 36px
+      line-height: 130%
+      text-align: center
+      text-transform: uppercase
+   &__num 
+      font-family: 'VG5000'
+      font-weight: 400
+      font-size: 128px
+      line-height: 100%
+      text-transform: uppercase
+      color: $yellow
+.nft 
+   padding: 200px 0 150px
+   h2 
+      text-align: center
+   &__box 
+      margin-top: 120px
+   &__item 
+      position: relative
+      margin-right: 20px
+      width: 425px
+      height: 425px
+      transition: border 0.5s
+      border: 2px solid transparent
+      box-sizing: border-box
+      flex: 1 0 auto
+      max-width: 425px
+      user-select: none
+      pointer-events: none
+      &:last-child
+         margin-right: 0
+   &__pic 
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      object-fit: contain
+   &__row 
+      margin-bottom: 20px
+      overflow-x: auto
+   &__more 
+      margin: 46px auto 0
+   &__text 
+      font-family: "Neue Machina"
+      font-weight: 900
+      font-size: 72.6386px
+      line-height: 135%
+      text-transform: uppercase
+      text-shadow: 0px 2.26996px 2.26996px rgba(0, 0, 0, 0.25)
+      transform: rotate(-90deg)
+      -webkit-text-stroke: 1px #FFFFFF
+      color: transparent
+      position: relative
+      left: 78px
+      margin-right: -146px
+      white-space: nowrap
+      user-select: none
+   &__scroll 
+      overflow: auto
+.nft__scroll::-webkit-scrollbar, .nft__row::-webkit-scrollbar
+   height: 1px
+   width: 1px
+.nft__scroll::-webkit-scrollbar-track, .nft__row::-webkit-scrollbar-track
+   background: transparent
+   border-radius: 3px
+.nft__scroll::-webkit-scrollbar-thumb, .nft__row::-webkit-scrollbar-thumb
+   background-color: transparent
+   border-radius: 6px
+.token 
+   padding: 121px 0
+   .smart__bg
+      top: -212px
+      left: 316px
+      text-transform: uppercase
+   &__box 
+      align-items: flex-start
+   &__wrap
+      margin-top: 37px
+      position: relative
+   &__item 
+      width: 425px
+      height: auto
+      min-height: 345px
+      padding: 28px 10px 30px 33px
+      border: 2px solid #FFFFFF
+      margin-right: 20px
+      transition: color 0.5s, background 0.5s, border 0.5s
+      cursor: pointer
+      box-sizing: border-box
+      position: relative
+      &:nth-child(2)
+         margin-top: 163px
+      &:nth-child(3)
+         margin-top: 328px
+      &:nth-child(4)
+         margin-top: 489px
+      &:last-child
+         margin-right: 0
+      &:hover 
+         background: #FFFFFF
+         border: 2px solid #755DAF
+         color: #171717 !important
+         .token__text 
+            color: #171717 !important
+   &__icon 
+      margin-bottom: 12px
+      width: 112px
+      height: 112px
+      object-fit: contain
+   &__name 
+      font-family: "Neue Machina"
+      font-weight: 800
+      font-size: 24px
+      line-height: 130%
+      text-transform: uppercase
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+   &__text 
+      margin-top: 18px
+      font-weight: 400
+      font-size: 16px
+      line-height: 130%
+      color: #FFFFFF
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+      transition: color 0.5s
+.stat 
+   padding: 241px 0
+   h2 
+      text-align: center
+   &__box 
+      width: 100%
+      max-width: 1267px
+      margin: 85px auto 0
+      justify-content: center
+      align-items: center
+   &__item 
+      display: flex
+      align-items: center
+      &:nth-child(1) .stat__load
+         background: #755DAF
+      &:nth-child(2) .stat__load
+         background: #FFD67A
+      &:nth-child(3) .stat__load
+         background: #FFE1A0
+      &:nth-child(4) .stat__load
+         background: #1B6775
+      &:nth-child(5) .stat__load
+         background: #4D909D
+   &__num
+      font-family: "Neue Machina"
+      font-weight: 900
+      font-size: 36px
+      line-height: 130%
+      text-transform: uppercase
+      color: #FFFFFF
+      left: -37px
+      position: relative
+   &__item 
+      margin-bottom: 50px
+      &:last-child
+         margin-bottom: 0
+   &__load 
+      width: 149px
+      height: 60px
+   &__list 
+      top: -4px
+      position: relative
+      left: -10px
+      margin-right: 24px
+.images 
+   padding: 205px 0
+   &__item 
+      width: 33.33%
+.what 
+   padding: 211px 0
+   h2 
+      text-align: center
+   &__box 
+      margin-top: 117px
+   &__item 
+      text-align: center
+      max-width: 425px
+      width: 100%
+      margin-right: 50px
+      &:last-child
+         margin-right: 0
+   &__name 
+      font-weight: 900
+      font-size: 30px
+      line-height: 110%
+      text-align: center
+      text-transform: uppercase
+      color: #FFFFFF
+      font-family: "Neue Machina"
+      position: relative
+      width: max-content
+      margin: 0 auto 20px
+      sup 
+         font-weight: 400
+         font-size: 14px
+         line-height: 17px
+         position: absolute
+         top: -8px
+         left: -24px
+   &__text 
+      font-weight: 400
+      font-size: 18px
+      line-height: 130%
+      text-align: center
+.logos 
+   padding: 75px 0
+   &__box 
+      align-items: center
+      width: 104%
+      justify-content: space-between
+   &__pic 
+      width: 22.7%
+      object-fit: cover
+.accordeon 
+   width: 49.5%
+.accordeon__item
+   margin-bottom: 10px
+   &:hover 
+      .accordeon__button 
+         color: $yellow
+.accordeon__button 
+   width: 100%
+   text-align: left
+   padding: 24px 40px 29px
+   background: #282828
+   border: none
+   font-weight: 600
+   font-size: 18px
+   line-height: 140%
+   color: #FFFFFF
+   cursor: pointer
+   position: relative
+   transition: color 0.5s 
+   &:after 
+      content: ''
+      position: absolute
+      right: 20px
+      background: url(img/arr-down.svg) no-repeat 
+      width: 15px
+      height: 15px
+      bottom: 50%
+      margin-bottom: -12px
+      transition: all 0.5s ease
+   &.active 
+      &:after 
+         content: ''
+         position: absolute
+         right: 20px
+         background: url(img/arr-top.svg) no-repeat 
+         width: 15px
+         height: 15px
+         bottom: 50%
+         margin-bottom: -12px
+         transition: all 0.5s ease
+.accordeon__panel  
+   max-height: 0
+   overflow: hidden
+   transition: max-height .5s ease
+   background: #282828
+   padding: 0 40px
+   margin-left: 0
+   transition: max-height 0.5s
+.panel__text
+   font-family: 'Inter Light BETA'
+   list-style-type: none
+   font-weight: 300
+   font-size: 16px
+   line-height: 150%
+   color: #FFFFFF
+   margin-bottom: 10px
+   &:last-child
+      padding-bottom: 40px
+.ask 
+   padding: 180px 0
+   h2 
+      text-align: center
+   &__box 
+      justify-content: space-between
+      max-width: 1464px
+      width: 100%
+      margin: 60px auto 0
+.sub 
+   padding: 160px 0
+   h2 
+      font-weight: 900
+      font-size: 96px
+      line-height: 93px
+   &__box 
+      justify-content: space-between
+      max-width: 1464px
+      width: 100%
+      margin: 0px auto
+      align-items: center
+   &__pic 
+      width: 709px
+      height: 660px
+      object-fit: contain
+   &__content 
+      max-width: 722px
+      margin-left: 180px
+.footer
+   padding: 40px 0
+   &__text 
+      font-weight: 400
+      font-size: 14px
+      line-height: 17px
+      text-align: center
+      color: #858585
+      margin-top: 60px
+.road 
+   padding: 205px 0 30px
+   &__block 
+      position: relative
+   &__line 
+      position: absolute
+      top: 277px
+      left: 150px
+   h2 
+      text-align: center
+   &__title 
+      font-weight: 400
+      font-size: 200px
+      line-height: 100%
+      text-transform: uppercase
+      font-family: 'VG5000'
+      color: transparent
+      -webkit-text-stroke: 1px white
+      margin-bottom: 150px
+   &__el 
+      font-weight: 700
+      font-size: 20px
+      line-height: 120%
+      color: #FFFFFF
+      font-family: "Neue Machina"
+      margin-bottom: 23px
+      &:last-child
+         margin-bottom: 0
+   &__box 
+      margin-top: 83px
+      padding-left: 148px
+   &__flex
+      max-width: 710px
+      margin-left: 465px
+      width: 100%
+      justify-content: space-between
+   &__wrap 
+      margin-bottom: 100px
+      &:nth-child(2), &:nth-child(3)
+         margin-left: 407px
+         .road__flex
+            max-width: 619px
+            margin-left: 61px
+         .road__title
+            margin-bottom: 137px
+      &:nth-child(3)
+         position: relative
+         top: -28px
+         .road__flex
+            max-width: 686px
+      &:nth-child(4)
+         position: relative
+         top: -42px
+         .road__title 
+            margin-bottom: 130px
+         .road__flex
+            max-width: 689px
