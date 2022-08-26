@@ -1374,7 +1374,12 @@ div, q {
   margin-right: 30px;
   flex-direction: column;
   text-align: left;
+  transition: border 0.5s;
   margin-bottom: 30px;
+  cursor: pointer;
+}
+.dashboard-right__item:hover {
+  border: 2px solid #FFD67A;
 }
 .dashboard-right__item:nth-child(3n) {
   margin-right: 0;
