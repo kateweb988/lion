@@ -35,6 +35,12 @@
 		<li style="width: 25%; margin: 0 auto;">
 			<a href="dashboard.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Dashboard</a>
 		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="account.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Account</a>
+		</li>
+		<li style="width: 25%; margin: 0 auto;">
+			<a href="calc.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Calculator</a>
+		</li>
 	</ul>
 	<div class="d-flex"
 		style="justify-content: space-between; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
@@ -49,62 +55,58 @@
 		</a>
 	</div>
 
-	<div style="display:none;">
-		<div class="box-modal pop1" id="pop6">
-			<div class="popup">
-				<div class="popup-call__box">
-					<div class="box-modal__close articmodal-close">
-						<img src="css/img/close.svg" alt="" class="svg">
+	<div class="wrapper">
+		<a href="#" class="open-popup" style="margin-bottom: 20px">Открыть попап</a>
+		<a href="#" class="open-popup2">Открыть попап</a>
+	</div>
+	
+	<div class="popup__bg">
+		<div class="popup">
+			<svg class="icon close-popup"><use xlink:href="css/img/svg-sprite.svg#close"></use></svg>
+			<img src="css/img/pop.png" alt="" class="popup__img">
+			<p class="popup__name">
+				Successful Connection!
+			</p>
+			<p class="popup__text">
+				Your wallet has been successfully connected! Now you can make transactions in your personal account.
+			</p>
+			<a href="#" class="popup__btn  btn btn1">
+				Done
+			</a>
+		</div>
+	</div>  
+	<div class="popup__bg2">
+		<div class="popup2">
+			<svg class="icon close-popup2"><use xlink:href="css/img/svg-sprite.svg#close"></use></svg>
+			<p class="popup__name">
+				Connect Wallet
+			</p>
+			<p class="popup__text">
+				Choose your wallet to connect
+			</p>
+			<div class="popup__flex d-flex">
+				<div class="popup__item active">
+					<div class="popup__block">
+						<img src="css/img/met.png" alt="" class="popup__icon">
 					</div>
-					<div class="popup__flex d-flex">
-						<div class="popup__left">
-							<img src="css/img/token.svg" alt="">
-						</div>
-						<div class="popup__right">
-							<p class="popup__title">
-								Sell BULL
-							</p>
-							<div class="popup-links d-flex">
-								<a href="#" class="active">
-									Limit price
-								</a>
-								<a href="#">
-									Best price
-								</a>
-							</div>
-							<form action="" class="popup-form market-form item-form">
-								<div class="pop1__item">
-									<label>
-										Enter BULL Sum
-									</label>
-									<input type="number" name="usd" maxlength="8" placeholder="100.00" class="bull">
-									<p class="max">
-										Max: 65 BULL
-									</p>
-								</div>
-								<div class="pop1__item">
-									<label>
-										Price
-									</label>
-									<input type="number" name="usd" maxlength="8" placeholder="100.00" class="bull">
-								</div>
-								<div class="pop1__item">
-									<label>
-										You get USDT
-									</label>
-									<input type="number" name="usd" maxlength="8" placeholder="100.00" class="bull">
-								</div>
-
-								<a href="#" class="pop-btn btn btn3">
-									Buy
-								</a>
-							</form>
-						</div>
+					<p class="popup__title">
+						Metamask
+					</p>
+				</div>
+				<div class="popup__item">
+					<div class="popup__block">
+						<img src="css/img/met2.png" alt="" class="popup__icon">
 					</div>
+					<p class="popup__title">
+						Walletconnect
+					</p>
 				</div>
 			</div>
+			<a href="#" class="popup__btn  btn btn1">
+				Connect WAllet
+			</a>
 		</div>
-	</div>
+	</div>  
 	<script src="js/all.js"></script>
 </body>
 

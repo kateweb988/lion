@@ -117,27 +117,27 @@
         max-width: 670px
     .road__line
         width: 100%
-        top: 187px
+        top: 127px
     .road__block
         max-width: 1120px
         margin: 0 auto
     .road__title
-        font-size: 150px
-        margin-bottom: 90px
+        font-size: 120px
+        margin-bottom: 48px
     .road__flex 
         max-width: 575px
         margin-left: 329px
     .road__wrap
-        margin-bottom: 60px
+        margin-bottom: 28px
     .road__wrap:nth-child(2), .road__wrap:nth-child(3)
         margin-left: 330px
     .road__wrap:nth-child(2) .road__title, .road__wrap:nth-child(3) .road__title
-        margin-bottom: 70px
+        margin-bottom: 37px
     .road__wrap:nth-child(2) .road__flex, .road__wrap:nth-child(3) .road__flex 
         max-width: 527px
         margin-left: -17px
     .road__wrap:nth-child(2) 
-        margin-bottom: 100px
+        margin-bottom: 145px
     .road__wrap:nth-child(3) .road__flex
         max-width: 590px
     .road__wrap:nth-child(4) .road__flex 
@@ -145,6 +145,8 @@
         margin-left: 273px
     .road__wrap:nth-child(4) .road__title
         margin-bottom: 70px
+    .road__wrap:nth-child(3)
+        margin-bottom: 120px
     .dashboard-right__item 
         width: 31.3%
     .dashboard-right__flex
@@ -157,6 +159,12 @@
         right: -11%
     .dashboard-right__btn
         margin-top: 40px
+    .dashboard-right__block_acc, .dashboard-right__block_calc
+        width: 100% !important
+        margin-right: 0
+        padding: 40px !important
+    .dashboard-right__block_acc .dashboard-right__btn 
+        width: 222px
 @media screen and (max-width: 1299px) 
     .header__wrap 
         top: -147px
@@ -405,7 +413,7 @@
         margin-left: 247px
     .road__title 
         font-size: 100px
-        margin-bottom: 70px
+        margin-bottom: 56px
     .road__line 
         top: 120px
     .road__wrap
@@ -416,7 +424,9 @@
         max-width: 501px
         margin-left: -103px
     .road__wrap:nth-child(2) 
-        margin-bottom: 58px
+        margin-bottom: 129px
+    .road__wrap:nth-child(3) 
+        margin-bottom: 97px
     .road__wrap:nth-child(3) .road__flex
         max-width: 583px
     .road__wrap:nth-child(4) .road__flex 
@@ -470,6 +480,19 @@
     .dashboard-right 
         .menu .button, .burger
             display: none
+    .road__el 
+        margin-bottom: 12px
+        font-size: 18px
+    .dashboard-right__block_acc .dashboard-right__info
+        margin-right: 30px
+    .dashboard-right__block_acc .dashboard-right__info:nth-child(2) 
+        margin-right: 0px
+    .dashboard-right__block_acc .dashboard-right__btn
+        width: 100%
+    .calc__block
+        padding: 29px 40px 56px
+    .calc__bottom .dashboard-right__line .dashboard-right__name
+        text-align: left
 @media ( max-width: 991px )
     .header__round 
         width: 154px
@@ -552,15 +575,15 @@
         padding: 60px 0 30px
     .road__title 
         font-size: 70px
-        margin-bottom: 50px
+        margin-bottom: 36px
     .road__line 
         top: 80px
     .road__flex 
         max-width: 420px
         margin-left: 173px
     .road__el 
-        font-size: 16px
-        margin-bottom: 15px
+        font-size: 14px
+        margin-bottom: 10px
     .road__wrap:nth-child(2), .road__wrap:nth-child(3) 
         margin-left: 210px
     .road__wrap:nth-child(2) .road__title, .road__wrap:nth-child(3) .road__title
@@ -573,6 +596,12 @@
     .road__wrap:nth-child(4) .road__flex 
         max-width: 483px
         margin-left: 115px
+    .road__wrap
+        margin-bottom: 19px
+    .road__wrap:nth-child(2)
+        margin-bottom: 80px
+    .road__wrap:nth-child(3)
+        margin-bottom: 60px
     .logos__pic
         width: 49.7%
     .logos__box
@@ -596,6 +625,16 @@
         width: 100%
         margin-right: 0 !important
         margin-bottom: 10px
+    .calc__bottom .dashboard-right__line
+        flex-direction: column
+    .dashboard-right__line .dashboard-right__name
+        margin-right: 0
+    .calc__bottom .dashboard-right__line .dashboard-right__name 
+        text-align: center
+    .calc__item
+        width: 100%
+    .calc__bottom .dashboard-right__name
+        font-size: 13px
 @media screen and (max-width: 767px)
     .burger.active .nav__btn
         width: 100%
@@ -918,3 +957,42 @@
         margin: 20px 0 50px
     .dashboard-right__btn
         margin-top: 20px
+    .dashboard-right__block_acc .dashboard-right__btn
+        width: 100%
+    .dashboard-right__block_acc,  .dashboard-right__block_calc
+        padding: 40px 20px !important
+    .dashboard-right__block_acc .dashboard-right__name, .dashboard-right__block_acc .dashboard-right__sum,  .dashboard-right__block_calc .dashboard-right__name, .dashboard-right__block_calc .dashboard-right__sum
+        text-align: center
+    .dashboard-right__block_acc .dashboard-right__info, .dashboard-right__block_calc .dashboard-right__info
+        margin-right: 0
+        margin-bottom: 15px
+    .dashboard-right__one
+        font-size: 28px
+    .dashboard-right__block_acc .dashboard-right__sum,  .dashboard-right__block_calc .dashboard-right__sum
+        font-size: 30px
+    .calc__bottom
+        flex-direction: column
+    .calc__left, .calc__right
+        margin-bottom: 20px
+        width: 100%
+    .calc__block 
+        padding: 29px 20px 46px
+    .calc__label 
+        font-size: 13px
+        margin-bottom: 12px
+    .calc__item
+        margin-bottom: 20px
+    .calc__text
+        font-size: 12px
+    .popup, .popup2
+        width: 95%
+        height: auto
+        padding: 39px 20px
+    .popup__block
+        min-height: 93px
+        img 
+            width: 90px
+    .popup__item
+        width: 48%
+
+
