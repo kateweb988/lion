@@ -1,3 +1,6 @@
+@media screen and (max-width: 1899px) 
+    .dashboard-right__block:nth-child(2)
+        padding-left: 40px
 @media screen and (max-width: 1799px) 
     .sub__content
         margin-left: 100px
@@ -10,6 +13,10 @@
         top: -79px
     .dashboard-right__item
         width: 31.8%
+    .dashboard-right__block:nth-child(2)
+        padding-left: 20px
+    .dashboard-right__btns
+        max-width: 200px
 @media screen and (max-width: 1699px) 
     .header__round 
         left: 46%
@@ -34,6 +41,10 @@
         margin-left: 40px
     .dashboard-right__item 
         width: 31.7%
+    .dashboard-right__block:nth-child(2) .dashboard-right__info:nth-child(2)
+        padding: 0 20px
+    .dashboard-right__sum
+        font-size: 22px
 @media screen and (max-width: 1599px) 
     .header__round 
         left: 40%
@@ -52,6 +63,13 @@
         height: auto
     .dashboard-right__item 
         width: 31.6%
+    .dashboard-right__btns
+        margin: 25px auto 0
+        max-width: 300px
+    .dashboard-right__block_acc .dashboard-right__info:nth-child(2)
+        margin-right: 22px
+        position: relative
+        right: -22px
 @media screen and (max-width: 1499px) 
     .header__img
         width: 523px
@@ -157,8 +175,6 @@
             margin-right: 0
     .dashboard-right__info:first-child:after 
         right: -11%
-    .dashboard-right__btn
-        margin-top: 40px
     .dashboard-right__block_acc, .dashboard-right__block_calc
         width: 100% !important
         margin-right: 0
@@ -487,12 +503,21 @@
         margin-right: 30px
     .dashboard-right__block_acc .dashboard-right__info:nth-child(2) 
         margin-right: 0px
+        right: 0
     .dashboard-right__block_acc .dashboard-right__btn
         width: 100%
     .calc__block
         padding: 29px 40px 56px
     .calc__bottom .dashboard-right__line .dashboard-right__name
         text-align: left
+    .dashboard-right__block:nth-child(1)
+        max-width: 100%
+    .dashboard-right__block:nth-child(2)
+        padding-left: 10px
+    .dashboard-right__block:nth-child(2) .dashboard-right__info:nth-child(2)
+        padding: 0 100px
+    .dashboard-right__btns
+        max-width: 340px
 @media ( max-width: 991px )
     .header__round 
         width: 154px
@@ -635,6 +660,20 @@
         width: 100%
     .calc__bottom .dashboard-right__name
         font-size: 13px
+    .dashboard-right__block:nth-child(2) .dashboard-right__info:nth-child(2)
+        padding: 0 20px
+    .popup__left
+        display: none !important
+        opacity: 0
+    .popup3.active .popup__right, .popup4.active .popup__right, .popup5.active .popup__right
+        width: 100%
+    .popup3.active, .popup4.active, .popup5.active
+        width: 100%
+        height: auto
+        padding-bottom: 40px
+    .close-popup3, .close-popup4, .close-popup5
+        top: 40px
+        z-index: 4
 @media screen and (max-width: 767px)
     .burger.active .nav__btn
         width: 100%
@@ -817,6 +856,11 @@
         padding: 20px
     .dashboard-right .menu 
         position: absolute
+    .dashboard-right__block:nth-child(2) .dashboard-right__info:nth-child(2)
+        padding: 0
+        border: none
+    .dashboard-right__btns
+        max-width: 100%
 @media screen and (max-width: 576px)
     input, textarea, select 
         -webkit-appearance: none
@@ -994,5 +1038,20 @@
             width: 90px
     .popup__item
         width: 48%
-
-
+    .dashboard-right__btns
+        margin-top: 10px
+        a 
+            height: 60px
+    .lang_select--selected
+        margin-left: 0
+    .lang_select
+        margin-top: 20px
+    .dashboard-right__block_acc .dashboard-right__btns
+        flex-direction: column
+    .dashboard-right__block_acc .dashboard-right__btns a:nth-child(2) 
+        margin-left: 0
+        margin-top: 10px
+    .popup3.active .popup__right, .popup4.active .popup__right, .popup5.active .popup__right
+        padding: 60px 20px 40px
+    .popup__approve
+        font-size: 20px

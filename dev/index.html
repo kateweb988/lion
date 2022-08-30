@@ -25,88 +25,194 @@
 </head>
 
 <body>
-	<h1 style="text-align: center; margin: 40px auto;">
-		Pages
-	</h1>
-	<ul style="display: flex; max-width: 800px; margin: 0 auto 50px; flex-wrap: wrap;">
-		<li style="width: 25%; margin: 0 auto;">
-			<a href="main.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Main</a>
-		</li>
-		<li style="width: 25%; margin: 0 auto;">
-			<a href="dashboard.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Dashboard</a>
-		</li>
-		<li style="width: 25%; margin: 0 auto;">
-			<a href="account.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Account</a>
-		</li>
-		<li style="width: 25%; margin: 0 auto;">
-			<a href="calc.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Calculator</a>
-		</li>
-	</ul>
-	<div class="d-flex"
-		style="justify-content: space-between; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
-		<a href="#" class="btn btn1" style="margin: 20px;">
-			audit
-		</a>
-		<a href="#" class="btn btn2" style="margin: 20px;">
-			Whitepaper
-		</a>
-		<a href="#" class="btn btn3 " style="margin: 20px;">
-			buy pancake swap
-		</a>
-	</div>
-
-	<div class="wrapper">
-		<a href="#" class="open-popup" style="margin-bottom: 20px">Открыть попап</a>
-		<a href="#" class="open-popup2">Открыть попап</a>
-	</div>
-	
-	<div class="popup__bg">
-		<div class="popup">
-			<svg class="icon close-popup"><use xlink:href="css/img/svg-sprite.svg#close"></use></svg>
-			<img src="css/img/pop.png" alt="" class="popup__img">
-			<p class="popup__name">
-				Successful Connection!
-			</p>
-			<p class="popup__text">
-				Your wallet has been successfully connected! Now you can make transactions in your personal account.
-			</p>
-			<a href="#" class="popup__btn  btn btn1">
-				Done
+	<div class="body-wrap">
+		<h1 style="text-align: center; margin: 40px auto;">
+			Pages
+		</h1>
+		<ul style="display: flex; max-width: 800px; margin: 0 auto 50px; flex-wrap: wrap;">
+			<li style="width: 25%; margin: 0 auto;">
+				<a href="main.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Main</a>
+			</li>
+			<li style="width: 25%; margin: 0 auto;">
+				<a href="dashboard.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Dashboard</a>
+			</li>
+			<li style="width: 25%; margin: 0 auto;">
+				<a href="dashboard-connected.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Dashboard-connected</a>
+			</li>
+			<li style="width: 25%; margin: 0 auto;">
+				<a href="account.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Account</a>
+			</li>
+			<li style="width: 25%; margin: 40px auto 0;">
+				<a href="calc.html" style="font-weight: bold; font-size: 25px; display: block; text-align: center;">Calculator</a>
+			</li>
+		</ul>
+		<div class="d-flex"
+			style="justify-content: space-between; margin-top: 80px; max-width: 1000px; margin: 0 auto; flex-wrap: wrap;">
+			<a href="#" class="btn btn1" style="margin: 20px;">
+				audit
+			</a>
+			<a href="#" class="btn btn2" style="margin: 20px;">
+				Whitepaper
+			</a>
+			<a href="#" class="btn btn3 " style="margin: 20px;">
+				buy pancake swap
 			</a>
 		</div>
-	</div>  
-	<div class="popup__bg2">
-		<div class="popup2">
-			<svg class="icon close-popup2"><use xlink:href="css/img/svg-sprite.svg#close"></use></svg>
-			<p class="popup__name">
-				Connect Wallet
-			</p>
-			<p class="popup__text">
-				Choose your wallet to connect
-			</p>
-			<div class="popup__flex d-flex">
-				<div class="popup__item active">
-					<div class="popup__block">
-						<img src="css/img/met.png" alt="" class="popup__icon">
+
+		<div class="wrapper">
+			<a href="#" class="open-popup" style="margin-bottom: 20px">Открыть попап</a>
+			<a href="#" class="open-popup2" style="margin-bottom: 20px">Открыть попап</a>
+			<a href="#" class="open-popup3" style="margin-bottom: 20px">Stake</a>
+			<a href="#" class="open-popup4" style="margin-bottom: 20px">Step1</a>
+			<a href="#" class="open-popup5" style="margin-bottom: 20px">Step2</a>
+		</div>
+		
+		<div class="popup__bg">
+			<div class="popup">
+				<svg class="icon close-popup"><use xlink:href="css/img/svg-sprite.svg#close"></use></svg>
+				<img src="css/img/pop.png" alt="" class="popup__img">
+				<p class="popup__name">
+					Successful Connection!
+				</p>
+				<p class="popup__text">
+					Your wallet has been successfully connected! Now you can make transactions in your personal account.
+				</p>
+				<a href="#" class="popup__btn  btn btn1">
+					Done
+				</a>
+			</div>
+		</div>  
+		<div class="popup__bg2">
+			<div class="popup2">
+				<svg class="icon close-popup2"><use xlink:href="css/img/svg-sprite.svg#close"></use></svg>
+				<p class="popup__name">
+					Connect Wallet
+				</p>
+				<p class="popup__text">
+					Choose your wallet to connect
+				</p>
+				<div class="popup__flex d-flex">
+					<div class="popup__item active">
+						<div class="popup__block">
+							<img src="css/img/met.png" alt="" class="popup__icon">
+						</div>
+						<p class="popup__title">
+							Metamask
+						</p>
 					</div>
-					<p class="popup__title">
-						Metamask
-					</p>
+					<div class="popup__item">
+						<div class="popup__block">
+							<img src="css/img/met2.png" alt="" class="popup__icon">
+						</div>
+						<p class="popup__title">
+							Walletconnect
+						</p>
+					</div>
 				</div>
-				<div class="popup__item">
-					<div class="popup__block">
-						<img src="css/img/met2.png" alt="" class="popup__icon">
+				<a href="#" class="popup__btn  btn btn1">
+					Connect WAllet
+				</a>
+			</div>
+		</div>  
+		<div class="popup__bg3">
+			<div class="popup3">
+				<svg class="icon close-popup3"><use xlink:href="css/img/svg-sprite.svg#close"></use></svg>
+				<div class="popup__wrap d-flex">
+					<div class="popup__left">
+						<p class="popup__logo">[LION APY]</p>
+						<img src="css/img/popup.png" alt="" class="popup__picture">
 					</div>
-					<p class="popup__title">
-						Walletconnect
-					</p>
+					<div class="popup__right">
+						<p class="popup__name">Stake</p>
+						<form action="#" class="calc__form">
+							<div class="calc__flex d-flex">
+								<div class="calc__item">
+									<label class="calc__label">Withdraw</label>
+									<input type="number" class="calc__input" placeholder="89 366">
+									<p class="calc__text">
+										LAP
+									</p>
+									<p class="popup__max">Max: 650 000 USDT</p>
+								</div>
+								<div class="calc__item">
+									<label class="calc__label">Stay in your Wallet</label>
+									<input type="number" class="calc__input" placeholder="89 366">
+									<p class="calc__text">
+										LAP
+									</p>
+								</div>
+							</div>
+							<button class="calc__btn btn btn1">
+								Withdraw
+							</button>
+						</form>
+					</div>
 				</div>
 			</div>
-			<a href="#" class="popup__btn  btn btn1">
-				Connect WAllet
-			</a>
-		</div>
-	</div>  
+		</div>  
+		<div class="popup__bg4">
+			<div class="popup4">
+				<svg class="icon close-popup4"><use xlink:href="css/img/svg-sprite.svg#close"></use></svg>
+				<div class="popup__wrap d-flex">
+					<div class="popup__left">
+						<p class="popup__logo">[LION APY]</p>
+						<img src="css/img/popup.png" alt="" class="popup__picture">
+					</div>
+					<div class="popup__right">
+						<div class="popup__step d-flex">
+							<a href="#" class="popup__link active">
+								Step 1
+							</a>
+							<a href="#" class="popup__link">
+								Step 2
+							</a>
+						</div>
+						<p class="popup__name">Confirm Buy</p>
+						<img src="css/img/nft.png" alt="" class="popup__el">
+						<p class="popup__approve">
+							Approve <span class="yel">8109.687</span> LAP
+						</p>
+						<a href="#" class="popup__app btn btn1">
+							Approve
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>  
+		<div class="popup__bg5">
+			<div class="popup5">
+				<svg class="icon close-popup5"><use xlink:href="css/img/svg-sprite.svg#close"></use></svg>
+				<div class="popup__wrap d-flex">
+					<div class="popup__left">
+						<p class="popup__logo">[LION APY]</p>
+						<img src="css/img/popup.png" alt="" class="popup__picture">
+					</div>
+					<div class="popup__right">
+						<div class="popup__step d-flex">
+							<a href="#" class="popup__link active">
+								Step 1
+							</a>
+							<a href="#" class="popup__link active">
+								Step 2
+							</a>
+						</div>
+						<p class="popup__name">Confirm Buy</p>
+						<img src="css/img/nft.png" alt="" class="popup__el">
+						<p class="popup__wait">
+							Waiting for Confirmation
+						</p>
+						<p class="popup__approve">
+							Stake <span class="yel">8109.687</span> LAP
+						</p>
+						<p class="popup__confirm">Confirm this transaction in your wallet</p>
+						<a href="#" class="popup__app btn btn1">
+							Stake 
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>  
+	</div>
 	<script src="js/all.js"></script>
 </body>
 

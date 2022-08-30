@@ -646,3 +646,152 @@
             margin-bottom: 84px
          .road__flex
             max-width: 689px
+.header--lang
+   position: relative
+   display: flex
+   align-items: center
+   @media( max-width: 992px )
+      justify-content: center
+.main_menu
+    position: relative
+    display: flex
+    height: 100px
+    &--item
+        display: flex
+        align-items: center
+        padding: 0 20px
+    &--lnk
+        transition: color 0.5s
+.main_submenu
+   position: relative
+   cursor: pointer
+   .sub__btn 
+      font-family: "Neue Machina"
+      width: 100%
+      font-weight: 900
+      font-size: 12px
+      margin-top: 15px
+   &--icon
+      transform: rotate(0)
+      transform-origin: 50% 50% 0
+      transition: transform, stroke
+      margin-left: 8px
+      position: relative
+      top: -3px
+   &--list
+      width: 212px
+      height: auto
+      padding: 20px 25px 30px
+      display: flex
+      flex-direction: column
+      position: absolute
+      left: 500%
+      top: 90px
+      max-width: none
+      transition: transform .2s, opacity .2s
+      z-index: 100
+      background: linear-gradient(210.96deg, rgba(32, 32, 32, 1) 0.01%, rgba(28, 28, 30, 1) 42.05%, rgba(0, 0, 0, 1) 104.81%)
+      box-shadow: -23.609px 48.8461px 73.2692px rgba(23, 23, 23, 0.55)
+      border-radius: 5px
+      opacity: 0
+   &--subitem
+      transition: transform .1s
+      color: #FFFFFF
+      a
+         font-weight: 400
+         font-size: 14px
+         color: #FFFFFF
+   &--lnk
+      display: block
+      padding: 15px 10px 15px 20px
+      white-space: nowrap
+      transition: color 0.5s
+      &:hover
+         color: $yellow
+      &-padding_equal
+         padding: 10px 15px
+   &:hover
+      .main_submenu--list
+         left: 50%
+      .main_submenu--subitem
+         transform: rotateX(0)
+         opacity: 1
+         transition-delay: .8s
+         &:nth-child(1)
+            transition-delay: .05s
+         &:nth-child(2)
+            transition-delay: .1s
+         &:nth-child(3)
+            transition-delay: .15s
+         &:nth-child(4)
+            transition-delay: .2s
+         &:nth-child(5)
+            transition-delay: .25s
+         &:nth-child(6)
+            transition-delay: .3s
+         &:nth-child(7)
+            transition-delay: .35s
+         &:nth-child(8)
+            transition-delay: .4s
+         &:nth-child(9)
+            transition-delay: .45s
+         &:nth-child(10)
+            transition-delay: .5s
+         &:nth-child(11)
+            transition-delay: .55s
+         &:nth-child(12)
+            transition-delay: .6s
+         &:nth-child(13)
+            transition-delay: .65s
+         &:nth-child(14)
+            transition-delay: .7s
+         &:nth-child(15)
+            transition-delay: .75s
+.lang_select
+   position: relative
+   display: flex
+   &--selected
+      cursor: pointer
+      transition: color 0.5s
+      font-weight: 400
+      font-size: 20px
+      line-height: 19px
+      color: #FFFFFF
+      font-family: 'Neue Machina'
+      margin-left: 50px
+      &:hover
+         color: $yellow
+      @media( max-width: 992px )
+         color: #fff
+   &.main_submenu
+      @media( max-width: 1000px )
+            .main_submenu--list
+               transform: translateX(-50%) translateY(50px)
+               opacity: 0
+               visibility: hidden
+            .main_submenu--subitem
+               transform: rotateX(90deg)
+      &:hover                                
+         .main_submenu--icon
+            transform: rotate(-180deg)
+            top: 3px
+         .main_submenu--list
+            transform: translateX(-50%) translateY(-31%)
+            opacity: 1
+            visibility: visible
+            @media( max-width: 576px )
+               transform: translateX(-50%) translateY(-26%)
+         .main_submenu--subitem
+            transform: rotateX(0)
+            opacity: 1
+            transition-delay: .3s
+            &:nth-child(1)
+               transition-delay: .05s
+            &:nth-child(2)
+               transition-delay: .1s
+            &:nth-child(3)
+               transition-delay: .15s
+            &:nth-child(4)
+               transition-delay: .2s
+            &:nth-child(5)
+               transition-delay: .25s
