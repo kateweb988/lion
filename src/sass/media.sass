@@ -17,6 +17,9 @@
         padding-left: 20px
     .dashboard-right__btns
         max-width: 200px
+    .plan__box
+        left: -110px
+        position: relative
 @media screen and (max-width: 1699px) 
     .header__round 
         left: 46%
@@ -45,6 +48,14 @@
         padding: 0 20px
     .dashboard-right__sum
         font-size: 22px
+    .nft__text 
+        font-size: 57.6386px
+        line-height: 99%
+        margin-right: -165px
+    .nft__item
+        height: 370px
+    .plan__box 
+        left: -162px
 @media screen and (max-width: 1599px) 
     .header__round 
         left: 40%
@@ -65,11 +76,43 @@
         width: 31.6%
     .dashboard-right__btns
         margin: 25px auto 0
-        max-width: 300px
+        max-width: 326px
     .dashboard-right__block_acc .dashboard-right__info:nth-child(2)
         margin-right: 22px
         position: relative
         right: -22px
+    .road__line
+        width: 100%
+    .road__block
+        max-width: 1340px
+    .road__flex
+        margin-left: 373px
+    .road__wrap
+        margin-bottom: 13px
+    .road__wrap:nth-child(2)
+        margin-bottom: 106px
+    .road__wrap:nth-child(2) .road__title
+        margin-bottom: 52px
+    .road__wrap:nth-child(2) .road__flex, .road__wrap:nth-child(3) .road__flex
+        margin-left: -23px
+    .road__wrap:nth-child(3)
+        margin-bottom: 108px
+    .nft__item 
+        height: 340px
+    .nft__text 
+        font-size: 53.6386px
+        line-height: 99%
+        margin-right: -138px
+    .dashboard-right__btns
+        display: flex
+        justify-content: space-between
+        max-width: 100%
+        a 
+            width: 48%
+    .dashboard-right__btn2
+        margin-top: 0
+    .plan__box 
+        left: -186px
 @media screen and (max-width: 1499px) 
     .header__img
         width: 523px
@@ -93,6 +136,10 @@
         right: -13px
     .dashboard-right__name
         font-size: 14px
+    .plan__box 
+        left: -190px
+    .plan__wrap:nth-child(1):after
+        right: -102px
 @media only screen and (max-height: 750px) and (max-width: 1400px) 
     .header__box
         margin-top: 60px
@@ -181,6 +228,14 @@
         padding: 40px !important
     .dashboard-right__block_acc .dashboard-right__btn 
         width: 222px
+    .plan__wrap:nth-child(2)
+        margin-right: 60px
+    .plan__right .plan__wrap:nth-child(1):after 
+        bottom: 109px
+        left: -85px
+    .plan__right .plan__wrap:nth-child(2):after
+        left: -100px
+        top: 166px
 @media screen and (max-width: 1299px) 
     .header__wrap 
         top: -147px
@@ -223,12 +278,32 @@
     .dashboard-right__block 
         width: 48.3%
         padding: 50px 10px
+    .nft__item 
+        height: 281px
+    .dashboard-right__block:nth-child(2)
+        padding-left: 10px
+    .plan__wrap:nth-child(1)
+        margin-right: 80px
+    .plan__wrap:nth-child(2)
+        margin-right: 30px
+    .plan__wrap:nth-child(1):after 
+        right: -54px
+        top: 13px
+    .plan__right .plan__wrap:nth-child(1):after 
+        bottom: 111px
+        left: -71px
+    .plan__right .plan__wrap:nth-child(2):after
+        top: 182px
+    .plan__wrap:nth-child(2) .plan__info
+        left: 2px
 @media only screen and (max-height: 750px) and (max-width: 1300px) 
     .header__round 
         left: 45%
         width: 17%
         top: -68px
 @media screen and (max-width: 1199px) 
+    .images .smart__bg
+        display: none
     .smart__link:last-child
         margin-right: 0
     .burger 
@@ -512,12 +587,39 @@
         text-align: left
     .dashboard-right__block:nth-child(1)
         max-width: 100%
-    .dashboard-right__block:nth-child(2)
-        padding-left: 10px
     .dashboard-right__block:nth-child(2) .dashboard-right__info:nth-child(2)
-        padding: 0 100px
+        padding: 0 40px
     .dashboard-right__btns
-        max-width: 340px
+        flex-direction: column
+        max-width: 380px
+        a 
+            width: 100%
+    .dashboard-right__btn2
+        margin-top: 10px
+    .dashboard-right__block:nth-child(2)
+        padding: 50px
+    .plan__box 
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        left: 0
+        margin-top: 100px
+    .plan__wrap:nth-child(2)
+        order: 1
+    .plan__wrap:nth-child(1)
+        order: 2
+    .plan__right 
+        order: 3
+    .plan__wrap
+        margin: 0 auto 80px !important
+        left: 0 !important
+        top: 0 !important
+        right: 0 !important
+        bottom: 0 !important
+    .plan__wrap::after
+        display: none !important
+    .plan__wrap:nth-child(2) .plan__info 
+        left: -11px
 @media ( max-width: 991px )
     .header__round 
         width: 154px
@@ -660,8 +762,6 @@
         width: 100%
     .calc__bottom .dashboard-right__name
         font-size: 13px
-    .dashboard-right__block:nth-child(2) .dashboard-right__info:nth-child(2)
-        padding: 0 20px
     .popup__left
         display: none !important
         opacity: 0
@@ -674,6 +774,10 @@
     .close-popup3, .close-popup4, .close-popup5
         top: 40px
         z-index: 4
+    .dashboard-right__block:nth-child(2) .dashboard-right__info:nth-child(2) 
+        padding: 0px 20px
+    .dashboard-right__block:nth-child(2) 
+        padding: 50px 20px
 @media screen and (max-width: 767px)
     .burger.active .nav__btn
         width: 100%
@@ -861,6 +965,9 @@
         border: none
     .dashboard-right__btns
         max-width: 100%
+    .dashboard-right
+        height: auto
+        overflow: visible
 @media screen and (max-width: 576px)
     input, textarea, select 
         -webkit-appearance: none
@@ -1012,6 +1119,7 @@
         margin-bottom: 15px
     .dashboard-right__one
         font-size: 28px
+        text-align: center
     .dashboard-right__block_acc .dashboard-right__sum,  .dashboard-right__block_calc .dashboard-right__sum
         font-size: 30px
     .calc__bottom
@@ -1055,3 +1163,68 @@
         padding: 60px 20px 40px
     .popup__approve
         font-size: 20px
+    .dashboard-right__info
+        border-bottom: 1px solid #323232
+        padding-bottom: 20px
+        margin-bottom: 20px
+        border-right: none
+        &:last-child
+            padding-bottom: 0
+            border: none
+    .dashboard-right__block:nth-child(2) .dashboard-right__info
+        width: 92%
+    .dashboard-right__block:nth-child(2) .dashboard-right__info:nth-child(2)
+        height: auto
+        border-bottom: 1px solid #323232
+        padding-bottom: 20px
+        margin-bottom: 20px
+    .dashboard-right__block:nth-child(2) .dashboard-right__info:nth-child(3)
+        border-bottom: none
+        padding-bottom: 0
+        margin-bottom: 0
+    .dashboard-right__block:nth-child(1)
+        padding: 40px
+    .dashboard-right__info:first-child:after
+        display: none
+    .dashboard-right__block_acc .dashboard-right__info
+        width: 100%
+    .dashboard-right__block_acc .dashboard-right__btns a
+        width: 100%
+    .dashboard-right__block_acc .dashboard-right__btns
+        width: 100%
+    .dashboard-right__block_acc .dashboard-right__info:nth-child(2)
+        border: none
+        margin-top: 10px
+    .dashboard-right__line
+        flex-direction: column
+    .dashboard-right__block_calc .dashboard-right__info
+        width: 100%
+    .dashboard-right__block_calc .dashboard-right__info:last-child
+        margin-bottom: 0
+        padding-bottom: 0
+    .plan__info
+        left: 0 !important
+    .plan
+        padding: 60px 0 25px
+    .plan__wrap
+        max-width: 332px !important
+    .plan__item 
+        width: 294px !important
+        height: 294px !important
+        margin: 0 auto !important
+    .plan__wrap:nth-child(2) .plan__pic 
+        top: -66px
+        left: 60px
+        width: 200px
+    .plan__right .plan__wrap:nth-child(2) .plan__pic
+        width: auto
+    .plan__wrap:nth-child(2) .plan__text
+        font-size: 14px
+    .plan__name
+        font-size: 40px
+    .plan__wrap:nth-child(2) .plan__bottom
+        padding-top: 15px
+    .popup__bg.active, .popup__bg2.active, .popup__bg3.active, .popup__bg4.active, .popup__bg5.active
+        overflow-y: scroll
+    .popup.active, .popup2.active, .popup3.active, .popup4.active, .popup5.active 
+        transform: translate(-50%, -39%) scale(1)   

@@ -50,7 +50,7 @@
             .active
                 border: 1px solid #FFD67A
                 p
-                    font-family: 'Inter Semi'
+                    font-family: 'Inter Semi', Arial, Helvetica, sans-serif
                     font-weight: 600
                     font-size: 14px
                     line-height: 350%
@@ -77,6 +77,8 @@
                 fill: white
     &-right
         width: 100%
+        height: 100vh
+        overflow-y: scroll
         padding-left: 239px
         transition: 0.5s
         background: linear-gradient(180deg, #1F1F1F 0%, #222222 86.25%)
@@ -103,7 +105,7 @@
             font-size: 15px
             line-height: 14px
             text-transform: uppercase
-            font-family: 'Neue Machina'
+            font-family: 'Neue Machina', Arial, Helvetica, sans-serif
             margin-top: 8px
         &__load 
             width: 100%
@@ -116,7 +118,6 @@
             left: 0
             top: 0
             background: $yellow
-            width: 40%
             height: 100%
         &__line 
             align-items: center
@@ -145,9 +146,6 @@
                 margin-right: 0
             .dashboard-right__name, .dashboard-right__sum
                 text-align: left
-            &_earn 
-                .dashboard-right__progress
-                    width: 80%
         &__row 
             margin-top: 100px
             flex-wrap: wrap
@@ -168,7 +166,7 @@
                 height: 100px
                 background: #323232
         &__name 
-            font-family: 'Neue Machina'
+            font-family: 'Neue Machina', Arial, Helvetica, sans-serif
             font-weight: 400
             font-size: 15px
             line-height: 14px
@@ -185,7 +183,7 @@
         &__flex
             align-items: inherit
         &__one 
-            font-family: 'Inter Extra Light BETA'
+            font-family: 'Inter Extra Light BETA', Arial, Helvetica, sans-serif
             font-weight: 200
             font-size: 40px
             line-height: 40px
@@ -277,18 +275,19 @@
             height: 24px
             margin-right: 12px
         &__bold 
-            font-family: 'Neue Machina'
+            font-family: 'Neue Machina', Arial, Helvetica, sans-serif
             font-weight: 900
             font-size: 20px
             line-height: 19px
         &__money 
             font-weight: 400
-            font-family: 'Neue Machina'
+            font-family: 'Neue Machina', Arial, Helvetica, sans-serif
             font-size: 20px
         &__content
             padding: 0px 40px 91px 30px
             height: 100%
             width: 100%
+            max-width: 1920px
         &__wrap
             align-items: center
             margin-left: auto
@@ -334,7 +333,7 @@
         line-height: 14px
         text-transform: uppercase
         color: #FFFFFF
-        font-family: 'Neue Machina'
+        font-family: 'Neue Machina', Arial, Helvetica, sans-serif
     &__flex 
         flex-wrap: wrap
         justify-content: space-between
@@ -348,7 +347,7 @@
         border: 1px solid transparent
         box-sizing: border-box
     &__label 
-        font-family: 'Neue Machina'
+        font-family: 'Neue Machina', Arial, Helvetica, sans-serif
         font-weight: 400
         font-size: 15px
         line-height: 14px
@@ -439,7 +438,7 @@
         margin-bottom: 40px
         justify-content: space-between
     &__name 
-        font-family: 'Neue Machina'
+        font-family: 'Neue Machina', Arial, Helvetica, sans-serif
         font-weight: 800
         font-size: 36px
         line-height: 35px
@@ -493,7 +492,7 @@
         font-size: 37.6568px
         line-height: 45px
         color: #FFFFFF
-        font-family: 'VG5000'
+        font-family: 'VG5000', Arial, Helvetica, sans-serif
     .popup__wrap 
         height: 100%
     .popup__left 
@@ -507,7 +506,7 @@
     line-height: 100%
     text-align: center
     color: #FFFFFF
-    font-family: 'Neue Machina'
+    font-family: 'Neue Machina', Arial, Helvetica, sans-serif
     margin-bottom: 29px
     .yel 
         color: $yellow
@@ -548,7 +547,7 @@
     text-align: center
     text-transform: uppercase
     color: #808080
-    font-family: 'Neue Machina'
+    font-family: 'Neue Machina', Arial, Helvetica, sans-serif
     display: flex
     align-items: center
     justify-content: center
@@ -569,7 +568,7 @@
     line-height: 100%
     text-align: center
     color: #FFFFFF
-    font-family: 'Neue Machina'
+    font-family: 'Neue Machina', Arial, Helvetica, sans-serif
     margin: -10px auto 20px
 .popup__confirm 
     font-weight: 400
@@ -577,7 +576,7 @@
     line-height: 100%
     text-align: center
     color: #FFFFFF
-    font-family: 'Neue Machina'
+    font-family: 'Neue Machina', Arial, Helvetica, sans-serif
     margin: -10px auto 20px
 .close-popup3, .close-popup4, .close-popup5
     right: inherit
