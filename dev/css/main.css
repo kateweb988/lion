@@ -2504,6 +2504,89 @@ input[type=range]::-moz-range-progress {
   left: 15px;
 }
 
+.new-popup .calc__input {
+  background: #192335;
+}
+.new-popup .calc__input:focus {
+  border: 1px solid #00D8E2 !important;
+}
+.new-popup .calc__label {
+  font-size: 14px;
+}
+.new-popup .calc__flex {
+  margin-top: 25px;
+}
+.new-popup .popup, .new-popup .popup5, .new-popup .popup4, .new-popup .popup3 {
+  background: #0A111F;
+}
+.new-popup .popup__right, .new-popup .popup5__right, .new-popup .popup4__right, .new-popup .popup3__right {
+  padding-bottom: 60px !important;
+}
+@media (max-width: 1199px) {
+  .new-popup .popup__right, .new-popup .popup5__right, .new-popup .popup4__right, .new-popup .popup3__right {
+    padding-bottom: 0 !important;
+  }
+}
+.new-popup .popup__wait, .new-popup .popup__confirm, .new-popup .popup5__wait, .new-popup .popup5__confirm, .new-popup .popup4__wait, .new-popup .popup4__confirm, .new-popup .popup3__wait, .new-popup .popup3__confirm {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+.new-popup .popup__approve, .new-popup .popup5__approve, .new-popup .popup4__approve, .new-popup .popup3__approve {
+  font-family: "Montserrat", sans-serif;
+}
+.new-popup .popup__approve .yel, .new-popup .popup5__approve .yel, .new-popup .popup4__approve .yel, .new-popup .popup3__approve .yel {
+  color: #00D8E2;
+}
+.new-popup .popup__el, .new-popup .popup5__el, .new-popup .popup4__el, .new-popup .popup3__el {
+  width: 152px;
+  height: 165px;
+}
+.new-popup .popup__link, .new-popup .popup5__link, .new-popup .popup4__link, .new-popup .popup3__link {
+  font-family: "Montserrat", sans-serif;
+}
+.new-popup .popup__link.active, .new-popup .popup5__link.active, .new-popup .popup4__link.active, .new-popup .popup3__link.active {
+  background: #00D8E2;
+}
+.new-popup .popup__link.active:hover, .new-popup .popup5__link.active:hover, .new-popup .popup4__link.active:hover, .new-popup .popup3__link.active:hover {
+  color: white;
+}
+.new-popup .popup__link:hover, .new-popup .popup5__link:hover, .new-popup .popup4__link:hover, .new-popup .popup3__link:hover {
+  color: #00D8E2;
+}
+.new-popup .popup__picture, .new-popup .popup5__picture, .new-popup .popup4__picture, .new-popup .popup3__picture {
+  height: 100%;
+  object-fit: cover;
+}
+.new-popup .popup__left, .new-popup .popup5__left, .new-popup .popup4__left, .new-popup .popup3__left {
+  padding-top: 0 !important;
+}
+.new-popup .popup__name, .new-popup .popup5__name, .new-popup .popup4__name, .new-popup .popup3__name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  white-space: nowrap;
+  line-height: 40px;
+}
+@media (max-width: 1199px) {
+  .new-popup .popup__name, .new-popup .popup5__name, .new-popup .popup4__name, .new-popup .popup3__name {
+    white-space: inherit;
+  }
+}
+.new-popup .popup__btn, .new-popup .popup5__btn, .new-popup .popup4__btn, .new-popup .popup3__btn {
+  width: 230px;
+  height: 50px;
+  background: #00D8E2;
+  transition: color 0.5s, border 0.5s, background 0.5s;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+.new-popup .popup__btn:hover, .new-popup .popup5__btn:hover, .new-popup .popup4__btn:hover, .new-popup .popup3__btn:hover {
+  color: #00D8E2;
+  border: 1px solid #00D8E2;
+  background: transparent;
+  transition: color 0.5s, border 0.5s, background 0.5s;
+}
+.new-popup .close-popup:hover, .new-popup .close-popup4:hover, .new-popup .close-popup5:hover, .new-popup .close-popup3:hover {
+  fill: #00D8E2;
+}
+
 @media screen and (max-width: 1899px) {
   .dashboard-right__block:nth-child(2) {
     padding-left: 40px;

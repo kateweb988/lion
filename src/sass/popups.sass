@@ -1,0 +1,57 @@
+.new-popup
+    .calc__input
+        background: #192335
+        &:focus 
+            border: 1px solid #00D8E2 !important
+    .calc__label
+        font-size: 14px
+    .calc__flex
+        margin-top: 25px
+    .popup, .popup5, .popup4, .popup3
+        background: #0A111F
+        &__right 
+            padding-bottom: 60px !important
+            @media ( max-width: 1199px )
+                padding-bottom: 0 !important
+        &__wait, &__confirm
+            font-family: 'Inter', Arial, Helvetica, sans-serif
+        &__approve 
+            font-family: 'Montserrat', sans-serif
+            .yel 
+                color: #00D8E2
+        &__el 
+            width: 152px
+            height: 165px
+        &__link
+            font-family: 'Montserrat', sans-serif
+            &.active 
+                background: #00D8E2
+                &:hover 
+                    color: white
+            &:hover 
+                color: #00D8E2
+        &__picture 
+            height: 100%
+            object-fit: cover
+        &__left 
+            padding-top: 0 !important
+        &__name 
+            font-family: 'Montserrat', sans-serif
+            font-weight: 800
+            white-space: nowrap
+            line-height: 40px
+            @media ( max-width: 1199px )
+                white-space: inherit
+        &__btn 
+            width: 230px
+            height: 50px
+            background: #00D8E2
+            transition: color 0.5s, border 0.5s, background 0.5s
+            font-family: 'Inter', Arial, Helvetica, sans-serif
+            &:hover 
+                color: #00D8E2
+                border: 1px solid #00D8E2
+                background: transparent
+                transition: color 0.5s, border 0.5s, background 0.5s
+    .close-popup:hover, .close-popup4:hover, .close-popup5:hover, .close-popup3:hover
+        fill: #00D8E2
